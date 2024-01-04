@@ -37,6 +37,7 @@ class Number:
         return hash(self.value)
 
 
+
 a = Number(1)
 f = Number(1)
 b = Number(3)
