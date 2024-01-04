@@ -33,7 +33,16 @@ class Number:
         s = self.chek_in_operation(other)
         return self.value <= s
 
+    def __hash__(self):
+        return hash(self.value)
+
 
 a = Number(1)
+f = Number(1)
 b = Number(3)
 print(a > b, a < b, a == b, a != b, a >= b, a <= b)
+d = {}
+d[a] = 1
+d[f] = 2
+print(d)
+print(hash(a), hash(f))
